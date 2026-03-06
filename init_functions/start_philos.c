@@ -2,7 +2,7 @@
 
 #include <pthread.h>
 
-#include "philo.h"
+#include "../philo.h"
 
 void	start_philos(t_data *data) {
 	int i;

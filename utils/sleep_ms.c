@@ -1,5 +1,5 @@
 ﻿#include <unistd.h>
-#include "philo.h"
+#include "../philo.h"
 
 void sleep_ms(long long milisec, t_data *data)
 {
@@ -7,5 +7,5 @@ void sleep_ms(long long milisec, t_data *data)
 
 	start = get_timestamp_ms();
 	while ((get_timestamp_ms() - start) < milisec)
-		usleep(500);
+		usleep(100);
 }

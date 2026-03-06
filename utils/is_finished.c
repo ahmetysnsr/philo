@@ -1,4 +1,4 @@
-﻿#include "philo.h"
+﻿#include "../philo.h"
 
 int is_finished(t_data *data)
 {
