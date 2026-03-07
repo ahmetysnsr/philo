@@ -4,6 +4,8 @@
 void	*init_philos(t_data *data) {
 	int id_counter;
 
+	if (data->forks == NULL)
+		return (NULL);
 	data->philosophers = malloc(data->number_of_philosophers * sizeof(t_philo));
 	if (data->philosophers == NULL)
 		return NULL;

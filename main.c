@@ -17,7 +17,6 @@ int	main(int argc, char **argv)
 	data = init_data(argc, argv);
 	if (!data)
 		return (1);
-	data->start_time = get_timestamp_ms();
 	if (!init_forks(data) || !init_philos(data))
 	{
 		clear_table(data);
