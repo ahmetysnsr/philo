@@ -1,5 +1,4 @@
 ﻿#include <stdio.h>
-
 #include "../philo.h"
 
 void print_status(t_philo *philo, char *status)

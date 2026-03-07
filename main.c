@@ -1,8 +1,4 @@
-﻿#include <pthread.h>
-#include <stdlib.h>
-#include <sys/time.h>
-#include <stdio.h>
-#include <unistd.h>
+﻿#include <stdio.h>
 #include "philo.h"
 
 int	main(int argc, char **argv)

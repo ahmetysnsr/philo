@@ -1,9 +1,4 @@
-﻿
-
-#include <pthread.h>
-#include <stdio.h>
-#include <unistd.h>
-
+﻿#include <unistd.h>
 #include "../philo.h"
 
 void    *philo_routine(void *arg)

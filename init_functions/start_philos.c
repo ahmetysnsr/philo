@@ -1,7 +1,4 @@
-﻿
-
-#include <pthread.h>
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "../philo.h"
 
 void	start_philos(t_data *data)

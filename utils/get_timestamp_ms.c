@@ -1,5 +1,4 @@
 ﻿#include <sys/time.h>
-#include <unistd.h>
 
 long long	get_timestamp_ms(void)
 {

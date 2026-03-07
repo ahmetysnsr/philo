@@ -1,6 +1,4 @@
 ﻿#include <stdlib.h>
-#include <pthread.h>
-
 #include "../philo.h"
 
 void clear_table(t_data *data)

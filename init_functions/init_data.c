@@ -1,5 +1,4 @@
 ﻿#include <stdlib.h>
-
 #include "../philo.h"
 
 t_data	*init_data(int argc, char **argv)

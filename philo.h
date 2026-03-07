@@ -1,6 +1,7 @@
 ﻿#ifndef PHILO_H
-#define PHILO_H
-#include <pthread.h>
+# define PHILO_H
+
+# include <pthread.h>
 
 typedef struct s_fork
 {

@@ -1,6 +1,5 @@
 ﻿#include <stdio.h>
 #include <unistd.h>
-
 #include "../philo.h"
 
 void    *monitor_routine(void *arg)

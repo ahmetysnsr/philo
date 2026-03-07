@@ -1,6 +1,4 @@
-﻿
-
-#include "../philo.h"
+﻿#include "../philo.h"
 #include <unistd.h>
 
 void	take_forks(t_philo *philo)
