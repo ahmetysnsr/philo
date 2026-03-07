@@ -2,12 +2,14 @@
 #define PHILO_H
 #include <pthread.h>
 
-typedef struct s_fork {
+typedef struct s_fork
+{
 	int				fork_id;
 	pthread_mutex_t	fork_mutex;
-} t_fork;
+}	t_fork;
 
-typedef struct s_philo {
+typedef struct s_philo
+{
 	int				philo_id;
 	int				eat_count;
 	long long       last_meal_time;
@@ -16,9 +18,10 @@ typedef struct s_philo {
 	t_fork			*l_fork;
 	pthread_t		thread;
 	struct s_data	*data;
-} t_philo;
+}	t_philo;
 
-typedef struct s_data {
+typedef struct s_data
+{
 	int				number_of_philosophers;
 	int				time_to_die;
 	int				time_to_eat;
@@ -29,7 +32,7 @@ typedef struct s_data {
 	pthread_mutex_t	write_lock;
 	t_philo			*philosophers;
 	t_fork			*forks;
-} t_data;
+}	t_data;
 
 t_data		*init_data(int argc, char **argv);
 long long	get_timestamp_ms(void);
@@ -49,9 +52,5 @@ void		take_nap(t_philo *philo);
 void		think(t_philo *philo);
 void		clear_table(t_data *data);
 int			ft_atoi(const char *str);
-
-
-
-
 
 #endif //PHILO_H

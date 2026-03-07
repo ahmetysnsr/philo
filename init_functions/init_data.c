@@ -2,7 +2,8 @@
 
 #include "../philo.h"
 
-t_data	*init_data(int argc, char **argv){
+t_data	*init_data(int argc, char **argv)
+{
 	t_data	*data;
 
 	data = (t_data *)malloc(sizeof(t_data));

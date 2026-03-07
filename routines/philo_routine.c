@@ -13,14 +13,11 @@ void    *philo_routine(void *arg)
 
     philo = (t_philo *)arg;
     data = philo->data;
-
     pthread_mutex_lock(&philo->meal_lock);
     philo->last_meal_time = get_timestamp_ms();
     pthread_mutex_unlock(&philo->meal_lock);
-
     if (philo->philo_id % 2 == 0)
        usleep(data->time_to_eat * 500);
-
     while (!is_finished(data))
     {
     	take_forks(philo);
